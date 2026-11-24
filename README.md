@@ -18,7 +18,8 @@ mkdir -p ~/.config/nixos-config
 
 curl -L https://github.com/papunmohanty/my_nixos_config/archive/refs/heads/main.zip -o my_nixos_config.zip
 
-unzip -j my_nixos_config.zip -d ~/.config/nixos-config
+unzip my_nixos_config.zip -d /tmp/nixos-extract
+mv /tmp/nixos-extract/my_nixos_config-main/* ~/.config/nixos-config/
 
 sudo nixos-install --flake ~/.config/nixos-config#<HOSTNAME> --impure
 #e.g.
