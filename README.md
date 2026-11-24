@@ -8,7 +8,7 @@
 
 # Commands
 ```bash
-nix shell nixpkgs#curl nixpkgs#unzip
+nix shell nixpkgs#curl nixpkgs#unzip --extra-experimental-features nix-command --extra-experimental-features flakes
 
 mkdir -p ~/.config/nixos-config
 
