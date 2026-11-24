@@ -20,6 +20,7 @@ curl -L https://github.com/papunmohanty/my_nixos_config/archive/refs/heads/main.
 
 unzip my_nixos_config.zip -d /tmp/nixos-extract
 mv /tmp/nixos-extract/my_nixos_config-main/* ~/.config/nixos-config/
+rm -rf /tmp/nixos-extract my_nixos_config.zip
 
 sudo nixos-install --flake ~/.config/nixos-config#<HOSTNAME> --impure
 #e.g.
