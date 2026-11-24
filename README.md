@@ -4,6 +4,10 @@
    ```bash
    sudo nixos-generate-config --root /mnt
    ```
+3. Copy Hardware Config to designated location
+   ```bash
+   sudo cp /mnt/etc/nixos/hardware-configuration.nix /etc/nixos/hardware-configuration.nix
+   ```
 
 
 # Commands
