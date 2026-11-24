@@ -20,5 +20,27 @@
       fi
     '';
   };
-  home.file.".config/hypr".source = ./config/hypr;  
+  home.file.".config/hypr".source = ./config/hypr;
+
+  services.hyprpaper = {
+  enable = true;
+  settings = {
+    preload = [
+      "~/wallpapers/wallpaper2.jpg"
+      "~/wallpapers/wallpaper.jpg"
+    ];
+    wallpaper = [
+      # By display
+      # {
+      #   monitor = "DP-2";
+      #   path = "~/wallpapers/wallpaper2.jpg";
+      # }
+      # By default/fallback
+      {
+        monitor = "";
+        path = "~/wallpapers/wallpaper1.jpg";
+      }
+    ];
+  };
+};
 }

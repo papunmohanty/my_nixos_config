@@ -23,15 +23,13 @@
     "nix-command"
     "flakes"
   ];
- 
-  
+
   environment.sessionVariables = {
     WLR_RENDERER_ALLOW_SOFTWARE = "1";
     LIBGL_ALWAYS_SOFTWARE = "1";
     WLR_NO_HARDWARE_CURSORS = "1";
   };
 
- 
   # Allow unfree packages system wide
   nixpkgs.config.allowUnfree = true;  # (WARNING): Only for testing purpose. Choose per-package unfree config & install
 
