@@ -15,13 +15,13 @@
         ./configuration.nix
         home-manager.nixosModules.home-manager
         {
-	  home-manager = {
-	    useGlobalPkgs = true;
-	    useUserPackages = true;
-	    users.pmo = import ./home.nix;
-	    backupFileExtension = "backup"; # This rename older app folder with <APP_NAME>.backup naming convension
-	  };
-	}
+          home-manager = {
+            useGlobalPkgs = true;
+            useUserPackages = true;
+            users.pmo = import ./home.nix;
+            backupFileExtension = "backup"; # This rename older app folder with <APP_NAME>.backup naming convension
+          };
+        }
       ];
     };
   };
